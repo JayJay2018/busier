@@ -5,6 +5,8 @@
     <% else %>
       <% @usertopics.each do |ut| %>
         <%= ut.topic.name  %>
+        <%= radio_button_tag :topic, "child" %>
+
       <% end %>
       <% end %>
   <% else %>
