@@ -9,3 +9,6 @@
 
 console.log('Hello World from Webpacker')
 import 'bootstrap';
+
+import { addActiveClass } from "components/add_active_class";
+addActiveClass();

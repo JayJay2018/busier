@@ -1,0 +1,19 @@
+<div class="container text-center">
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <% if current_user %>
+      <h4>Hi <%= current_user.nickname %>! Nice to see you again.</h4>
+      <h5>Please select three of your favourite topics...</h5>
+      <% else %>
+      <h4>Please login first to proceed...</h4>
+      <% end %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <% @topics.each do |topic| %>
+      <%= button_tag "#{topic.name}", class: 'btn btn-success' %>
+      <% end %>
+    </div>
+  </div>
+</div>
