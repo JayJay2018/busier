@@ -47,6 +47,18 @@ User.create!([{
 
 puts "Create #{User.count} User."
 
+puts "Creating trains..."
+
+Train.create!([{
+  name: 'ICE789',
+},
+{
+  name: 'IC10',
+}
+]);
+
+puts "Create #{Train.count} trains."
+
 puts "Creating stops...."
 
 Stop.create!([{
@@ -109,36 +121,6 @@ Topic.create!([{
 
 puts "Create #{Topic.count} topics."
 
-puts "Creating trains..."
-
-Train.create!([{
-  name: 'ICE789',
-},
-{
-  name: 'IC10',
-}
-]);
-
-puts "Create #{Train.count} trains."
-
-puts "Creating travel matches..."
-
-TravelMatch.create!([{
-  searcher_id: 1,
-  maker_id: 2,
-},
-{
-  searcher_id: 2,
-  maker_id: 3,
-},
-{
-  searcher_id: 1,
-  maker_id: 3,
-},
-]);
-
-puts "Create #{TravelMatch.count} travel matches."
-
 puts "Creating travels...."
 
 Travel.create!([{
@@ -160,6 +142,8 @@ Travel.create!([{
   end_date: '12.02',
 },
 ]);
+
+puts "Create #{Travel.count} travels."
 
 puts "Creating user topics..."
 
@@ -202,6 +186,24 @@ UserTopic.create!([{
 ]);
 
 puts "Create #{UserTopic.count} user topics."
+
+puts "Creating travel matches..."
+
+# TravelMatch.create!([{
+#   searcher_id: 1,
+#   maker_id: 2,
+# },
+# {
+#   searcher_id: 2,
+#   maker_id: 3,
+# },
+# {
+#   searcher_id: 1,
+#   maker_id: 3,
+# },
+# ]);
+
+puts "Create #{TravelMatch.count} travel matches."
 
 
 
