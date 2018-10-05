@@ -145,45 +145,45 @@ Travel.create!([{
 
 puts "Create #{Travel.count} travels."
 
-puts "Creating user topics..."
+# puts "Creating user topics..."
 
-UserTopic.create!([{
-  user_id: 1,
-  topic_id: 1,
-},
-{
-  user_id: 1,
-  topic_id: 2,
-},
-{
-  user_id: 1,
-  topic_id: 3,
-},
-{
-  user_id: 2,
-  topic_id: 1,
-},
-{
-  user_id: 2,
-  topic_id: 3,
-},
-{
-  user_id: 2,
-  topic_id: 7,
-},
-{
-  user_id: 3,
-  topic_id: 1,
-},
-{
-  user_id: 3,
-  topic_id: 4,
-},
-{
-  user_id: 3,
-  topic_id: 9,
-}
-]);
+# UserTopic.create!([{
+#   user_id: 1,
+#   topic_id: 1,
+# },
+# {
+#   user_id: 1,
+#   topic_id: 2,
+# },
+# {
+#   user_id: 1,
+#   topic_id: 3,
+# },
+# {
+#   user_id: 2,
+#   topic_id: 1,
+# },
+# {
+#   user_id: 2,
+#   topic_id: 3,
+# },
+# {
+#   user_id: 2,
+#   topic_id: 7,
+# },
+# {
+#   user_id: 3,
+#   topic_id: 1,
+# },
+# {
+#   user_id: 3,
+#   topic_id: 4,
+# },
+# {
+#   user_id: 3,
+#   topic_id: 9,
+# }
+# ]);
 
 puts "Create #{UserTopic.count} user topics."
 

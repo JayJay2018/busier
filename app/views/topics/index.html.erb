@@ -10,8 +10,10 @@
     </div>
   </div>
   <div class="row">
-    <% @topics.each do |topic| %>
-      <p> <%= topic.name %> </p>
-    <% end %>
+    <div class="col-xs-8 col-xs-offset-2">
+      <% @topics.each do |topic| %>
+      <%= button_tag "#{topic.name}", class: 'btn btn_mint' %>
+      <% end %>
+    </div>
   </div>
 </div>

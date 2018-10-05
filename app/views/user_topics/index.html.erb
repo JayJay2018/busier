@@ -1,4 +1,13 @@
-<% @usertopics.each do |ut| %>
-  <%= ut.topic.name  %>
-<% end %>
-
+<div class="container text-center">
+  <% if current_user %>
+    <% if @usertopics.blank? %>
+      <p>Please update your favourite topics before you proceed...</p>
+    <% else %>
+      <% @usertopics.each do |ut| %>
+        <%= ut.topic.name  %>
+      <% end %>
+      <% end %>
+  <% else %>
+    <p>Please <%= link_to "login", new_user_session_path %> first to proceed.</p>
+  <% end %>
+</div>

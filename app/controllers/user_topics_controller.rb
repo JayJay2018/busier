@@ -3,7 +3,6 @@ class UserTopicsController < ApplicationController
 
   def index
     @usertopics = UserTopic.all
-    @usertopics.user = current_user
   end
 
   def new
